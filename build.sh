@@ -19,6 +19,7 @@ if [ "$1" = device ]; then
         -framework UIKit -framework Foundation -framework CoreGraphics -framework QuartzCore -framework AudioToolbox -undefined dynamic_lookup \
         "${OBJS[@]}" -o build/device/Payload/KodiRemote.app/KodiRemote
     cp Info.plist res/*.png build/device/Payload/KodiRemote.app/
+    cp LICENSE THIRD_PARTY_NOTICES.md build/device/Payload/KodiRemote.app/
     (cd build/device && zip -q -r ../KodiRemote.ipa Payload)
     echo "built build/KodiRemote.ipa"
 else

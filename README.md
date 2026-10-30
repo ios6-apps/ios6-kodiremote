@@ -33,6 +33,15 @@ systematically on other devices, iOS versions or Kodi versions. See [Limitations
 - **Passwords**: a server that answers 401 makes the app ask for the user name and password from Kodi's web server settings.
 - Drawn entirely in code in an iOS 6 style (glossy bars, linen backdrop); no image assets except the icon and launch images.
 
+## Download
+
+Every push to `main` is built by GitHub Actions. Get the unsigned IPA from the [Releases page](../../releases):
+
+- [latest versioned release](../../releases/latest) - the stable one (versions follow [Semantic Versioning](https://semver.org/), see [CHANGELOG.md](CHANGELOG.md));
+- the [`nightly` pre-release](../../releases/tag/nightly) - the newest build of `main`, replaced on every push.
+
+The IPA is unsigned: install it on an iOS 6 device that has AppSync Unified, e.g. `ideviceinstaller -i KodiRemote-<version>.ipa`. A `.sha256` file sits next to each IPA.
+
 ## Requirements
 
 On the Kodi machine, **Settings > Services > Control**:
