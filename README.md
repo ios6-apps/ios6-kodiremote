@@ -1,3 +1,5 @@
+<img src="docs/icon.png" width="96" align="right" alt="KodiRemote icon">
+
 # KodiRemote
 
 A remote control for [Kodi](https://kodi.tv) written for old iPhones running **iOS 6**: a direction pad, play/pause, a seek
